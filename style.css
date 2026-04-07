@@ -11,8 +11,14 @@ header {
 }
 
 nav {
-    background-color: #4499ed;
+    display: inline-block;
+    width: 100%;
+    background-color: #4c91d6;
     padding: 10px;
+}
+
+nav img {
+    width: 10%;
 }
 
 main {
@@ -28,10 +34,10 @@ footer {
     padding: 10px;
 }
 
-li {
+/* li {
     display: inline-block;
     width: 120px;
-}
+} */
 
 li a {
     color: white;
@@ -48,4 +54,35 @@ h1 {
 
 p {
     line-height: 1.6;
+}
+
+.skip {
+    position: absolute;
+    left: -9999px;
+}
+
+.skip:focus {
+    left: 10px;
+    top: 10px;
+    background: black;
+    color: white;
+    padding: 8px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+    align-items: start;
+    row-gap: 20px; 
+}
+
+.grid img {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
